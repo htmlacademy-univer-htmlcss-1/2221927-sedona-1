@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
@@ -17,13 +17,13 @@
           alt="Логотип Седоны."></a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="info.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
         </li>
       </ul>
       <div class="navigation-user-container">
@@ -54,106 +54,211 @@
       </div>
     </nav>
   </header>
-  <main class="main-container main-index">
+  <main class="main-catalog main-container">
     <div class="page-container">
-      <h1 class="visually-hidden">Седона-город в Аризоне</h1>
-      <img src="images/welcome.jpg" width="1200" height="485"
-        alt="Добро пожаловать в великолепную Седону! Потому что Гранд-Каньон - отстой!">
-      <h2 class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="slogan-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <div class="advantages-wrapper">
-              <div class="advantages-bg-blue advantages-with-img">
-                <h3 class="advantages-title">Настоящий городок</h3>
-                <p class="advantages-description">— №1 —</p>
-                <p class="advantages-description">
-                  Седона — не аттракцион для туристов, там течёт своя жизнь
-                </p>
-              </div>
-              <img class="advantages-image" src="images/town.jpg" width="800" alt="Город.">
-            </div>
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <div class="advantages-bg-light-blue advantages-with-ico advantages-house">
-                  <h3 class="advantages-title">Жильё</h3>
-                  <p class="advantages-description">
-                    Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!
-                  </p>
-                </div>
-              </li>
-              <li class="advantages-item">
-                <div class="advantages-bg-white advantages-with-ico advantages-food">
-                  <h3 class="advantages-title">Еда</h3>
-                  <p class="advantages-description">
-                    Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!
-                  </p>
-                </div>
-              </li>
-              <li class="advantages-item">
-                <div class="advantages-bg-light-blue advantages-with-ico advantages-souvenirs">
-                  <h3 class="advantages-title">Сувениры</h3>
-                  <p class="advantages-description">
-                    Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!
-                  </p>
-                </div>
-              </li>
-            </ul>
+      <section class="catalog-header">
+        <h1 class="user-action-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item-main">
+            <a class="breadcrumbs-link-main" href="index.html"><span class="visually-hidden">Главная</span></a>
           </li>
-          <li class="advantages-item">
-            <div class="advantages-wrapper">
-              <img class="advantages-image" src="images/devil-bridge.jpg" width="800" alt="Мост Дьявола.">
-              <div class="advantages-bg-blue advantages-with-img">
-                <h3 class="advantages-title">Там есть Мост&nbsp;Дьявола</h3>
-                <p class="advantages-description">— №2 —</p>
-                <p class="advantages-description">
-                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-bg-light-blue advantages-only-text">
-              <h3 class="advantages-title">Небольшая Площадь</h3>
-              <p class="advantages-description">— №3 —</p>
-              <p class="advantages-description">
-                Все достопримечательности находятся очень близко
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-bg-medium-blue advantages-only-text">
-              <h3 class="advantages-title">Красивая Дорога</h3>
-              <p class="advantages-description">— №4 —</p>
-              <p class="advantages-description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-bg-light-blue advantages-only-text">
-              <h3 class="advantages-title">Мало туристов</h3>
-              <p class="advantages-description">— №5 —</p>
-              <p class="advantages-description">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
-            </div>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+        <h2 class="visually-hidden" hidden>Фильтры товаров</h2>
+        <form class="products-filters-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="products-filters-container">
+            <fieldset class="products-filters-group">
+              <legend class="products-filters-title">Инфраструктура:</legend>
+              <ul class="products-filters-list">
+                <li class="products-filters-item">
+                  <label class="products-filters-control">
+                    <input class="products-filters-control-input visually-hidden" type="checkbox" name="pool" checked>
+                    <span class="control-checkbox"></span>
+                    <span class="control-text">Бассейн</span>
+                  </label>
+                </li>
+                <li class="products-filters-item">
+                  <label class="products-filters-control">
+                    <input class="products-filters-control-input visually-hidden" type="checkbox" name="parking"
+                      checked>
+                    <span class="control-checkbox"></span> Парковка
+                  </label>
+                </li>
+                <li class="products-filters-item">
+                  <label class="products-filters-control">
+                    <input class="products-filters-control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                    <span class="control-checkbox"></span> Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="products-filters-group">
+              <legend class="products-filters-title">Тип жилья:</legend>
+              <ul class="products-filters-list">
+                <li class="products-filters-item">
+                  <label class="products-filters-control">
+                    <input class="products-filters-control-input visually-hidden" type="radio" name="type-of-housing"
+                      value="hotel " checked>
+                    <span class="control-radio"></span>Гостиница
+                  </label>
+                </li>
+                <li class="products-filters-item">
+                  <label class="products-filters-control">
+                    <input class="products-filters-control-input visually-hidden" type="radio" name="type-of-housing"
+                      value="motel">
+                    <span class="control-radio"></span>Мотель
+                  </label>
+                </li>
+                <li class="products-filters-item">
+                  <label class="products-filters-control">
+                    <input class="products-filters-control-input visually-hidden" type="radio" name="type-of-housing"
+                      value="apartaments">
+                    <span class="control-radio"></span>Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="products-filters-group">
+              <legend class="products-filters-title">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="price-input-wrapper">
+                  <label class="price-label">
+                    <span class="visually-hidden">от</span>
+                    <input class="price-input price-input-min" type="number" name="min-price" value="0">
+                    <span class="price-min"></span>
+                  </label>
+                  <label class="price-label">
+                    <span class="visually-hidden">до</span>
+                    <input class="price-input price-input-max" type="number" name="max-price" value="9000">
+                    <span class="price-max"></span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-slider">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить миниальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить маскимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="products-filters-buttons-container">
+              <button class="button button-blue" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
+          </div>
+        </form>
       </section>
-      <section class="hotel-search">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p class="hotel-search-entry">Заинтересовались?</p>
-        <p class="hotel-search-description">
-          Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения гостиниц в
-          Седоне
-        </p>
-        <a class="button button-brown" href="#">Поиск гостиницы в Седоне</a>
+      <section class="suitable-hotels">
+        <h2 class="visually-hidden">Подходящие гостиницы</h2>
+        <div class="select-container">
+          <select class="select select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <ul class="page-view-list">
+            <li class="page-view-item"><a class="page-view-link page-view-current tile" href=#><span
+                  class="visually-hidden">Показать
+                  плитку</span></a></li>
+            <li class="page-view-item"><a class="page-view-link  cards" href=#><span class="visually-hidden">Показать
+                  карточки</span></a></li>
+            <li class="page-view-item"><a class="page-view-link  list" href=#><span class="visually-hidden">Показать
+                  список</span></a></li>
+          </ul>
+          <p class="suitable-hotels-description">Найдено гостиниц: 38</p>
+        </div>
+        <ul class="suitable-hotels-list">
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-amara.jpg" alt="Фото отеля.">
+              <h3 class="suitable-hotels-name">Amara Resort & Spa</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостиница</p>
+            <p class="suitable-hotels-price">От 4000 ₽</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+            <img class="suitable-hotels-rating-stars" src="images/4-stars.svg" alt="4 звезды.">
+            <p class="suitable-hotels-rating-text">Рейтинг: 8,5</p>
+          </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-desert.jpg" alt="Фото отеля.">
+              <h3 class="suitable-hotels-name">Desert Quail Inn</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостиница</p>
+            <p class="suitable-hotels-price">От 3000 ₽</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+            <img class="suitable-hotels-rating-stars" src="images/3-stars.svg" alt="3 звезды">
+            <p class="suitable-hotels-rating-text">Рейтинг: 8,9</p>
+          </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-villas.jpg" alt="Фото отеля.">
+              <h3 class="suitable-hotels-name">Villas at Poco Diablo</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостиница</p>
+            <p class="suitable-hotels-price">От 2000 ₽</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-green" href="#">В избранном</a>
+            <img class="suitable-hotels-rating-stars" src="images/2-stars.svg" alt="2 звезды.">
+            <p class="suitable-hotels-rating-text">Рейтинг: 9,2</p>
+          </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-greentree.jpg" alt="Фото отеля.">
+              <h3 class="suitable-hotels-name">GreenTree Inn</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостиница</p>
+            <p class="suitable-hotels-price">От 3000 ₽</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+            <img class="suitable-hotels-rating-stars" src="images/2-stars.svg" alt="2 звезды.">
+            <p class="suitable-hotels-rating-text">Рейтинг: 9,2</p>
+          </li>
+        </ul>
+        <div class="button-load-more-container">
+          <a class="button button-blue button-load-more" href="#">Загрузить ещё</a>
+        </div>
+        <div class="page-view-container">
+          <ol class="pagination-list">
+            <li class="pagination-item">
+              <a class="button pagination-link pagination-link-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">10</a>
+            </li>
+          </ol>
+          <div class="select-hotels-per-page-container">
+            <span class="select-hotels-per-page-description">Гостиниц на странице: </span>
+            <select class="select select-hotels-per-page">
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="16">16</option>
+            </select>
+          </div>
+        </div>
       </section>
-      <section class="email-subscribe">
-        <h2 class="email-subscribe-title">Подпишитесь на рассылку</h2>
+      <section class="email-subscribe-catalog">
+        <h2 class="email-subscribe-title email-subscribe-title-catalog ">Подпишитесь на рассылку</h2>
         <p class="email-subscribe-description">
           Только полезная информация и никакого спама,
           честное бойскаутское!</p>
@@ -215,7 +320,6 @@
       </div>
     </section>
   </footer>
-
   <div class="modal-container modal-close">
     <section class="modal-content">
       <div class="modal-header">

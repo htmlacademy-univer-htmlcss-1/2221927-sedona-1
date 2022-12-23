@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Михаил  Евсеенко](https://up.htmlacademy.ru/univer-html1/1/user/2221927).
-* Наставник: `Алексей Самохвалов`.
+* Студент: [Михаил Евсеенко]
+* Наставник: [Алексей Самохвалов]
 
 ---
 
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-univer-htmlcss-1/2221927-sedona-1) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1896161-sedona-33) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
 
